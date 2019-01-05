@@ -1,0 +1,244 @@
+/* CSS Overview - Medical App . HTML
+    ColorScheme
+        Primary: cornflowerblue
+        Secondary: white
+        Accent: transluscent blue [ rgb(161, 196, 252) ]
+    Font Families 
+        Main: font-family: 'Rokkitt', serif;
+        Secondary: font-family: 'Cinzel', serif;
+
+    Component Layout Base
+        Header: class = "header" |
+        Components: span.left[Company Name],
+                    span.right[top-nav]
+        
+        Title: class = landing |
+        Components: 
+        
+        Banner:
+
+        Content(About):
+        Content(Application):
+        Content(Overview):
+
+        Section:
+
+        Footer:
+
+    External Components
+        Application:
+
+        SignUp Form:
+
+
+
+*/
+/* Global CSS */
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    box-sizing: border-box;
+    height: 100%;
+}
+#app {
+    /* background-image: url("img/medical-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-origin: border-box; */
+    /* background: rgba(161, 196, 252, 1); */
+    background-color: darkslategray;
+    font-family: 'Cinzel', serif;
+}
+
+/* headings */
+h2, h4 {
+    font-family: 'Rokkitt', serif;
+    text-decoration: underline;
+    text-align: center;
+    color: #fff;
+}
+/* Global Containers + Wrappers */
+.box {
+    height: 250px;
+    width: 100%;
+    background: #000;
+    margin: auto;
+}
+/* Header Components
+    [header.header],
+    [span.left],
+    [span.right],
+    [span.green]
+*/
+.header {
+    font-family: 'Rokkitt', serif;
+    color: white;
+    text-align: center;
+}
+/* top right link properties */
+.right a {
+    color: #fff;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 16px;
+}
+.right .active {
+    text-decoration: underline;
+    color:rgb(161, 196, 252);
+    font-size: 30px;
+}
+ .greenTxt {
+     color: green;
+     font-weight: bold;
+     font-size: 20px;
+ }
+/* Landing Components
+    [div.landing],
+    dov.landing-heading] */
+.landing {
+    clear: both;
+    margin: 1em;
+    background: rgba(161, 196, 252, 0.2);
+    /* width: 30%; */
+    
+    
+}
+.landing-heading {
+    text-align: center;
+    color: #fff;
+    clear: both;
+}
+/* nav [quicklinks] */
+.nav {
+    clear: both;
+    text-align: center;
+}
+.nav a {
+    color: #fff;
+
+}
+/* sections global properties */
+section {
+    clear: both;
+    text-align: center;
+    padding: 10px;
+}
+.container {
+   display: flex;
+}
+.content {
+    margin: auto;
+}
+.content p {
+    color: #fff;
+}
+/* link to Protoype App properties */
+.prototypeLink {
+    color: rgb(161,196,252);
+    font-size: 25px;
+    border: 1px solid #fff;
+    padding: 10px;
+    margin: auto;
+}
+/* Register Form Properties
+    Components
+        [form.register-form],
+        [input.userinfo],
+        [input.checkbox],
+        [button.createAcc]
+*/
+.register-form {
+    /* background-color: lightslategray; */
+    display: block;
+    padding: 25px;
+    background-color: slategrey;
+}
+.register-form input,
+.register-form button {
+    background: rgb(63, 64, 65);
+    color: #fff;
+    font-size: 18px;
+    text-align: center;
+    padding: 10px;
+    margin: 12px 0;
+    font-family: 'Rokkitt', serif;
+}
+
+
+/* Footer Properties */
+.footer {
+    background-color: rgb(63, 64, 65);
+    color: #fff;
+    padding: 2%;
+    margin: auto;
+}
+.footer h5 {
+    text-align: center;
+}
+/* section images 
+    layout provided by [div.box]
+ */
+#boxAbout {
+    background-image: url('img/medical-information.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#boxInfo {
+    background-image: url('img/medical-research.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#boxFeat {
+    background-image: url('img/medical-features.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+#boxRegi {
+    background-image: url('img/medical-register.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+@media screen and (min-width:900px) {
+    .box {
+        max-height: 550px;
+        height: 400px;
+        width: 70%;
+        background: #000;
+        margin: auto;
+    }
+    .header {
+        font-family: 'Rokkitt', serif;
+        color: white;
+        text-align: center;
+        background-color: rgb(63, 64, 65);
+        height: 30px;
+        max-height: 45px;
+        
+    }
+    .register-form {
+        display: inline-block;
+        height: 300px;
+    }
+    .landing {
+        clear: both;
+        margin: 1em;
+        background: rgba(161, 196, 252, 0.4);
+        width: 30%;
+    }
+    .left {
+        padding-left: 0.5em;
+        float: left;
+        
+    }
+    .right {
+        float: right;
+        padding-right: 1em;
+     }
+}
