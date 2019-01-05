@@ -258,9 +258,10 @@ section {
     .container {
         display: flex;
      }
-     .content {
+     .flex {
          margin: auto;
      }
+   
     .header {
         font-family: 'Rokkitt', serif;
         color: white;
