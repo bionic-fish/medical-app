@@ -9,6 +9,8 @@
     <!-- external libaries -->
     <link href="https://fonts.googleapis.com/css?family=Rokkitt" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Cinzel" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.6.3/css/all.css" integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/" crossorigin="anonymous">
+
 
 </head>
 <body>
@@ -59,27 +61,25 @@
                     smartphone or watch.
                 </p>
             </div><!-- div .content ends here-->
-    
             </div><!-- div.container ends here-->
-        </section><!-- section #information ends here-->
+    </section><!-- section #information ends here-->
 
     <section id="information">
         <h2>General Information</h2>
         <br>
-        
         <div class="container">
-
         <div class="content">
             <p>Offers invasive free monitorization of blood glucose levels that can be viewed through
             our application to show real time feeds.
             </p>
             <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-            molestiae autem repellat omnis quia nemo molestias non minima ea
-            quisquam?
+            <div id="boxInfo" class="box"></div>
+            <br>
+            <p>Set range levels according to personal thresholds. Delivers real time
+                values in mmol/L, low, mid, high levels, and monitor affected symptoms.
             </p>
         </div><!-- div .content ends here-->
-        <div id="boxInfo" class="box"></div>
+        
 
         </div><!-- div.container ends here-->
     </section><!-- section #information ends here-->
@@ -87,63 +87,65 @@
     <section id="features">
         <h2>Application Features</h2>
         <br>
-        
         <div class="container">
-                <div id ="boxFeat" class="box"></div>
-
         <div class="content">
-            <p>Offers invasive free monitorization of blood glucose levels that can be viewed through
-                our application to show real time feeds.
+            <p>Provides real time responsive monitorization of type 2 diabetes 
+            symptoms. Application available for Android, Smartphone and Apple ios.
             </p>
-            <br>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos
-            molestiae autem repellat omnis quia nemo molestias non minima ea
-            quisquam?
+        <br>
+        <div id ="boxFeat" class="box"></div>
+        <br>
+            <p>Create widgets for smart phone home screen, and smart watch home
+            screen, to view vital information on the go.
             </p>
         </div><!-- div .content ends here-->
-
         </div><!-- div.container ends here-->
     </section>
     <!-- Link To External Page: app.HTML -->
+    <section>
     <div class="container">
-            <div class="flex">
-        <div class="content">
-            <h4>Link To Prototype</h4>    
-            <br>
-            <a class="prototypeLink" href="app.html">View App</a>
-            <br>
-            
-        </div>
-            </div>
+    <div class="content flex">
+        <button>
+            <a href="app.html">View App</a>
+        </button>
     </div>
+    <br>
+    </div>
+    </section>
+    <!--link to end page app.HTML ends here-->
+    <br>
     <!-- Link to External ends here -->
+
     <!-- Contact | Register Form -->
     <section id="contact">
+        <div class="container">
+            <div class="content">
         <h2>Register</h2>
         <br>
-        <div id="boxRegi" class="box"></div>
         <p style="color:white; text-decoration: underline;">Register for monthly updates involving the application.</p>
         <br>
         <div class="container">
         <div class="content">
-            <form action="" class="register-form">
-                <h4>User Details</h4>
-                <input type="text" name="userinfo" placeholder="username here..."><br>
-                <input type="text" name="userinfo" placeholder="password here..."><br>
-                <input type="text" name="userinfo" placeholder="email here..."><br>
-                <input type="text" name="userinfo" placeholder="phone number here..."><br>
-                <!-- <p>Prefered Contact:<br>
-                 Email: <input type="checkbox" name="type"><br>
-                 Phone Call: <input type="checkbox" name="type"><br>
-                 Text Msg: <input type="checkbox" name="type">
-                </p> -->
-                <button>Create Account</button>
+            <form action="" class="register-form" autocomplete="off">
+                    <i class="far fa-newspaper"></i>
+                <h4>Newsletter Signup</h4>
+                <input type="text" name="userinfo" placeholder="username here..." required><br>
+                <input type="email" name="userinfo" placeholder="email here..." required><br>
+               <button>Submit</button>
             </form>
 
         </div><!-- div .content ends here-->
         </div><!-- div .container ends here-->
 
     </section><!-- section #contact ends here-->
+<br>
+<!-- quicklinks -->
+<nav class="nav">
+        <a href="index.html">Home</a>
+        <a href="app.html">App</a>
+        <a href="sup.html" class="active">Support</a>
+</nav>
+<!-- quicklinks nav menu ends here -->
 <br>
     <footer class="footer">
         <h5>Page Created By C D Harris<br>

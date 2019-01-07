@@ -1,9 +1,7 @@
 // Modal App Prototype
-
 var modal = document.getElementById('appModal');
 var btn = document.getElementById('appBtn');
 var span = document.getElementsByClassName('closeApp')[0];
-
 // When user clicks the button, open the appModal
 btn.onclick = function() {
     modal.style.display = "block";

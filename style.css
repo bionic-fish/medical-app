@@ -38,16 +38,16 @@
     margin: 0;
     padding: 0;
 }
+html {
+    scroll-behavior: smooth;
+}
 body {
     box-sizing: border-box;
     height: 100%;
+    
 }
 #app {
-    /* background-image: url("img/medical-background.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-origin: border-box; */
-    /* background: rgba(161, 196, 252, 1); */
+    
     background-color: darkslategray;
     font-family: 'Cinzel', serif;
 }
@@ -101,9 +101,6 @@ h2, h4 {
     clear: both;
     margin: 1em;
     background: rgba(161, 196, 252, 0.2);
-    /* width: 30%; */
-    
-    
 }
 .landing-heading {
     text-align: center;
@@ -117,7 +114,6 @@ h2, h4 {
 }
 .nav a {
     color: #fff;
-
 }
 /* sections global properties */
 section {
@@ -126,10 +122,15 @@ section {
     padding: 10px;
 }
 .flex {
-    display: flex;
+    display: block;
+}
+.content-flex {
+    border: 2px solid #fff;
+    padding: 20px;
 }
 .container {
-   display: block;
+   /* display: block; */
+   margin: auto;
 }
 .content {
     margin: auto;
@@ -137,15 +138,7 @@ section {
 .content p {
     color: #fff;
 }
-/* link to Protoype App properties */
-.prototypeLink {
-    color: rgb(161,196,252);
-    font-size: 25px;
-    border: 1px solid #fff;
-    padding: 10px;
-    /* margin: auto;
-    text-align: center; */
-}
+
 /* Register Form Properties
     Components
         [form.register-form],
@@ -154,22 +147,30 @@ section {
         [button.createAcc]
 */
 .register-form {
-    /* background-color: lightslategray; */
     display: block;
-    padding: 25px;
-    background-color: slategrey;
+    /* padding: 12px; */
+    border-block-end: 4px solid #fff;
+    width: 100%;
+    height: auto;
+    box-shadow: none;
 }
 .register-form input,
 .register-form button {
-    background: rgb(63, 64, 65);
-    color: #fff;
+    background: inherit;
+    border: none;
+    color: #FFF;
     font-size: 18px;
     text-align: center;
     padding: 10px;
-    margin: 12px 0;
+    margin: 0 auto;
     font-family: 'Rokkitt', serif;
+    outline: none;
+    
 }
-
+.register-form input[type=text],
+.register-form input[type=email] {
+    border-bottom: 3px solid #fff;
+}
 /* app.html 
     app prototype modal */
     .modal {
@@ -208,7 +209,46 @@ section {
         text-decoration: none;
         cursor: pointer;
       }
-
+/* font awesome icons */
+.far,
+.fas,
+.fab {
+    color: #fff;
+    font-size: 50px;
+}
+/* site wide buttons */
+/* link to Protoype App properties */
+.prototypeLink {
+    color: rgb(161,196,252);
+    font-size: 25px;
+    border: 1px solid #fff;
+    padding: 10px;
+    
+    
+}
+button {
+    font-size: 16px;
+    font-weight: bolder 500;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background: inherit;
+    color: #fff;
+    height: 45px;
+    width: 155px;
+    padding: 10px;
+    box-shadow: none;
+    transition: all 2s;
+    font-family: 'Rokkitt', serif;
+    
+    
+}
+button a {
+    color: #fff;
+    text-align: center;
+}
+button:hover {
+    background-color: rgb(161,196,252);
+}
 /* Footer Properties */
 .footer {
     background-color: rgb(63, 64, 65);
@@ -251,7 +291,8 @@ section {
     .box {
         
         height: 400px;
-        width: 70%;
+        
+        max-width: 960px;
         background: #000;
         margin: auto;
     }
@@ -259,7 +300,16 @@ section {
         display: flex;
      }
      .flex {
+         /* margin: auto; */
+         display: flex;
+         padding: 10px;
+         
+     }
+     .content-flex {
+         border: 2px solid #fff;
+         padding: 20px;
          margin: auto;
+         
      }
    
     .header {
@@ -271,10 +321,7 @@ section {
         max-height: 45px;
         
     }
-    .register-form {
-        display: inline-block;
-        height: 300px;
-    }
+    
     .landing {
         clear: both;
         margin: 1em;
